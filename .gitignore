@@ -1,0 +1,335 @@
+
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.staging
+.env.*.local
+
+# API keys and secrets
+*.key
+*.pem
+*.crt
+*.cert
+secrets/
+config/secrets/
+
+# =============================================================================
+# GO BACKEND SPECIFIC
+# =============================================================================
+# Go build artifacts
+go-backend/tmp/
+go-backend/bin/
+go-backend/dist/
+go-backend/build/
+go-backend/*.exe
+go-backend/*.exe~
+go-backend/*.dll
+go-backend/*.so
+go-backend/*.dylib
+go-backend/main
+go-backend/server
+go-backend/cmd/server/server
+go-backend/cmd/server/main
+
+# Go test files
+go-backend/*.test
+go-backend/*.prof
+go-backend/coverage.out
+go-backend/coverage.html
+
+# Go vendor directory (if using modules, usually not needed)
+go-backend/vendor/
+
+# Air live reload
+go-backend/.air.toml.local
+go-backend/tmp/
+
+# Go workspace
+go-backend/go.work
+go-backend/go.work.sum
+
+# =============================================================================
+# NEXT.JS FRONTEND SPECIFIC
+# =============================================================================
+# Next.js build output
+nextjs-frontend/.next/
+nextjs-frontend/out/
+nextjs-frontend/build/
+nextjs-frontend/dist/
+
+# Next.js cache
+nextjs-frontend/.next/cache/
+nextjs-frontend/.swc/
+
+# Static files (be careful with this, you might want some)
+# nextjs-frontend/public/uploads/
+# nextjs-frontend/public/temp/
+
+# Next.js types
+nextjs-frontend/next-env.d.ts
+
+# =============================================================================
+# NODE.JS & NPM/YARN/BUN
+# =============================================================================
+# Dependencies
+node_modules/
+nextjs-frontend/node_modules/
+go-backend/node_modules/
+
+# Lock files (choose one based on your package manager)
+# If using npm:
+# nextjs-frontend/package-lock.json
+# nextjs-frontend/npm-shrinkwrap.json
+
+# If using yarn:
+# nextjs-frontend/yarn.lock
+
+# If using bun (keep this one as you're using bun):
+# nextjs-frontend/bun.lockb  # Uncomment this line if you want to ignore bun.lockb
+
+# NPM/Yarn cache
+.npm/
+.yarn/
+.pnp.*
+nextjs-frontend/.pnp/
+nextjs-frontend/.pnp.js
+nextjs-frontend/.yarn/
+
+# Bun
+.bun/
+
+# =============================================================================
+# DEVELOPMENT TOOLS & IDEs
+# =============================================================================
+# VSCode
+.vscode/
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# LOGS & DEBUG FILES
+# =============================================================================
+# General logs
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+coverage/
+.nyc_output/
+.coverage/
+
+# =============================================================================
+# TEMPORARY & CACHE FILES
+# =============================================================================
+# Temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+*.tmp
+*.temp
+
+# Cache directories
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# =============================================================================
+# DATABASE & STORAGE
+# =============================================================================
+# SQLite databases
+*.sqlite
+*.sqlite3
+*.db
+
+# Database dumps
+*.sql
+*.dump
+
+# =============================================================================
+# DOCKER & CONTAINERS
+# =============================================================================
+# Docker
+*.dockerfile.swp
+docker-compose.override.yml
+.dockerignore
+
+# =============================================================================
+# TESTING & COVERAGE
+# =============================================================================
+# Test coverage
+coverage/
+.coverage
+*.lcov
+.nyc_output/
+
+# Jest
+jest.config.js.local
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# =============================================================================
+# BUILD & DEPLOYMENT
+# =============================================================================
+# Build outputs
+build/
+dist/
+out/
+
+# Deployment
+.vercel/
+.netlify/
+.firebase/
+
+# =============================================================================
+# DOCUMENTATION & ANALYSIS
+# =============================================================================
+# Generated documentation
+docs/generated/
+docs/build/
+
+# Code analysis
+nextjs-frontend/CodeGatherer/
+go-backend/CodeGatherer/
+*.analysis
+*.profiling
+
+# =============================================================================
+# SECURITY & CERTIFICATES
+# =============================================================================
+# SSL certificates
+*.crt
+*.key
+*.pem
+*.p12
+*.pfx
+
+# GPG
+*.gpg
+*.pgp
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archive files (optional - be careful)
+# *.zip
+# *.tar.gz
+# *.rar
+
+# Version control
+.git/
+.svn/
+.hg/
+
+# Editor directories and files
+.history/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Runtime configuration
+.runtime/
+
+# Custom application directories
+uploads/
+temp-uploads/
+user-content/
+
